@@ -12,7 +12,7 @@ import ManifestPlugin from '../manifest/plugin'
 var styleLoaders = {
   'css': '',
   // 'less': '!less-loader',
-  // 'scss|sass': '!sass-loader',
+  'scss|sass': '!sass-loader',
   // 'styl': '!stylus-loader'
 };
 
@@ -172,6 +172,10 @@ function configGenerator(Manifest) {
             test: /\.(ttf|eot)/,
             loader: "url-loader?limit=1000000?name=[name]-[hash].[ext]",
             exclude: /node_modules/
+          },
+          {
+            test: /\.html/,
+            loader: 'raw'
           }
         ])
 
