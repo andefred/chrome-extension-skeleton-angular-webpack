@@ -5,7 +5,7 @@
 // no unit tests for this module, it is jQuery manipulation mostly.
 //
 
-var $ = require('../libs/jquery');
+var $ = require('jquery');
 
 module.exports.init = function(callback) {
   $(function() {

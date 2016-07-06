@@ -1,1 +1,8 @@
-<div style="background:red; position:absolute; top:0px;left:0px; z-index:10000;">This is from the content script</div>
+<div class="sidebar">
+	This is from the content script
+	<div class="row">
+		<ul>
+			<li ng-repeat="item in sidebar.items">{{item.name}}</li>
+		</ul>
+	</div>
+</div>

@@ -3,6 +3,7 @@
 class SidebarCtrl {
   constructor() {
     this.app = {"menu":"item"}
+    this.items = [{name:"one"},{name:"two"},{name:"three"}]
   }
 }
 
@@ -12,6 +13,6 @@ export default () => {
   return {
     controller: SidebarCtrl,
     controllerAs: 'sidebar',
-    template: require('./sidebar.html')
+    template: require('./sidebar.html') //template is required as a string
   };
 };
